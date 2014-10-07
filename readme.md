@@ -1,25 +1,45 @@
-## Laravel PHP Framework
+Simple Laravel-based posts CRUD system
+======================================
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Demonstrates the use of Resource Controllers in Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+Setup:
+-----
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+You will need `composer` @ https://getcomposer.org/
 
-## Official Documentation
+*If starting from scratch do the following:*
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+`composer create-project laravel/laravel --prefer-dist <put-app-name-here>`
 
-### Contributing To Laravel
+Then you can clone the repo into another directory and copy paste everything from that into your new laravel app.
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+`git clone https://github.com/jpalala/laravel-crud-posts.git && cp -Rf laravel-crud-posts/* <laravel-app-dir>/`
 
-### License
+*Alternative, just clone down the repo and run composer install*
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+`git clone https:///github.com/jpalala/laravel-crud-posts.git`
+
+`cd laravel-crud-posts`
+
+`composer install` or `php composer.phar install` 
+
+Problems
+--------
+
+**Help, I'm using XAMPP, and `php artisan` and `php composer.phar` doesnt work**
+
+If you're using XAMPP on a linux/mac it's quite trivial to use XAMPP's php
+
+`/Applications/XAMPP/bin/php <artisan/composer.phar> some-artisan/composer-command`
+
+
+If you're using Windows, on the `cmd` console
+
+        C:/Program Files/XAMPP/php/php.exe <whatever-command-you-need-to-run> 
+    
+        //note: change the path according to the right path to your XAMPP installation's php.exe file`
+
+
+

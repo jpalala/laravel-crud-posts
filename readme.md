@@ -25,7 +25,17 @@ Then you can clone the repo into another directory and copy paste everything fro
 
 `composer install` or `php composer.phar install` 
 
-Problems
+
+Database Setup
+---------
+
+On the terminal, run: 
+
+	mysql -u [db_username] -p [db_password] [db_name] < create_posts.sql
+
+Note: Put your database credentials inside the brackets
+
+FAQ
 --------
 
 **Help, I'm using XAMPP, and `php artisan` and `php composer.phar` doesnt work**
